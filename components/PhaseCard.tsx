@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Check, Sparkles, ExternalLink } from 'lucide-react';
-import { RoadmapPhase, CheckedState } from '../types';
+import { RoadmapPhase, CheckedState } from '@/types';
 import { FormattedText } from './FormattedText';
 
 interface PhaseCardProps {
@@ -186,7 +186,8 @@ export const PhaseCard: React.FC<PhaseCardProps> = ({
                             className="font-mono text-[11px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded bg-slate-800/80 text-slate-300 border border-slate-700/50"
                             style={{ color: phase.accentColor }}
                           >
-                            // {item.subhead}
+                            {'// '}
+                            {item.subhead}
                           </span>
                         </div>
                       )}
